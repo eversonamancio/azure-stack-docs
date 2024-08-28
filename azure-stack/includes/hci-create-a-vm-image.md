@@ -30,7 +30,7 @@ Use the Azure CLI to create the VM image:
     ```azurecli
     $Subscription = "<Subscription ID>"
     $Resource_Group = "<Resource group>"
-    $CustomLocation = "<Custom location>"
+    $CustomLocation = "<The ID of extended location>"
     $Location = "<Location for your Azure Stack HCI cluster>"
     $OsType = "<OS of source image>"
     ```
@@ -41,6 +41,7 @@ Use the Azure CLI to create the VM image:
     |----------------|--------------------------------------------------------------------------------------------|
     | `Subscription`   | Subscription associated with your Azure Stack HCI cluster.        |
     | `Resource_Group` | Resource group for Azure Stack HCI cluster that you associate with this image.        |
+    | `Custom Location`| The ID of the extended location, available in Custom location properties.|
     | `Location`       | Location for your Azure Stack HCI cluster. For example, the location could be `eastus` or `westreurope`. |
     | `OsType`         | Operating system associated with the source image. This system can be Windows or Linux.           |
 
